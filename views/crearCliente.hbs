@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clientes</title>
+    <link rel="stylesheet" href="../css/valid.css" />
+    <link rel="stylesheet" href="../css/css.css" />
+  </head>
+  <body>
+
+    <h1>Nuevo Cliente</h1>
+    <br />
+    <form id="msform">
+
+      <fieldset>
+
+        <h3 class="fs-title" id="">seleccione su tipo de doc</h3>
+        <select>
+          <option value="cedula"> Cedula</option>
+          <option value="cedulaE">Cedula extrangería</option>
+          <option value="Tarjeta">Targeta de identidad</option>
+        </select>
+        <input
+          type="number"
+          id="ndocC"
+          placeholder="Digite el numero del documento"
+        />
+        <input
+          type="text"
+          id="nombreC"
+          placeholder="Por favor digite su nombre"
+        />
+        <input
+          type="number"
+          id="celularC"
+          placeholder="Por favor digite su celular"
+        />
+        <input
+          type="text"
+          id="direccionC"
+          placeholder="Por favor digite su direccion"
+        />
+        <input
+          type="text"
+          id="correoC"
+          placeholder="Por favor digite su correo"
+        />
+        <input
+          type="password"
+          id="contraseñaC"
+          placeholder="Digite una contraseña"
+        />
+        <input
+          type="password"
+          id="confirmacionC"
+          placeholder="Confirme la contraseña"
+        />
+
+        <!-- <input type="text" name="cpass" placeholder="Estado " /> -->
+        <button class="next action-button"><a href="/clientes">Regresar</a>
+        </button>
+        <button
+          id="btn"
+          type="submit"
+          name="next"
+          class="next action-button"
+        >Enviar</button>
+      </fieldset>
+    </form>
+    <script>
+      const idBoton = document.getElementById ("btn"); idBoton.addEventListener
+      ('click',(e) =>{ window.location.href = '/'; })
+    </script>
+    <script src="../js/validacionClientes.js"></script>
+  </body>
+</html>

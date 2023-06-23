@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar clientes</title>
+    <link rel="stylesheet" href="../css/valid.css" />
+    <link rel="stylesheet" href="../css/css.css" />
+  </head>
+  <body>
+
+    <h1>Editar Cliente</h1>
+    <br />
+    <form id="msform">
+
+      <fieldset>
+
+        <h3 class="fs-title" id="">editar</h3>
+        <select>
+          <option value="cedula"> Cedula</option>
+          <option value="cedulaE">Cedula extrangería</option>
+          <option value="Tarjeta">Targeta de identidad</option>
+        </select>
+        <input
+          type="number"
+          id="ndocC"
+          placeholder="12345"
+        />
+        <input
+          type="text"
+          id="nombreC"
+          placeholder="Mateo Calle"
+        />
+        <input
+          type="number"
+          id="celularC"
+          placeholder="320454433"
+        />
+        <input
+          type="text"
+          id="direccionC"
+          placeholder="Calle 10 #50-34"
+        />
+        <input
+          type="text"
+          id="correoC"
+          placeholder="Mateo@linatabares.com"
+        />
+        <input
+          type="password"
+          id="contraseñaC"
+          placeholder="Digite su contraseña"
+        />
+        <input
+          type="password"
+          id="confirmacionC"
+          placeholder="Confirme la contraseña"
+        />
+
+        <!-- <input type="text" name="cpass" placeholder="Estado " /> -->
+        <button class="next action-button"><a href="/clientes">Regresar</a>
+        </button>
+        <button
+          id="btn"
+          type="submit"
+          name="next"
+          class="next action-button"
+        >Enviar</button>
+      </fieldset>
+    </form>
+    <script>
+      const idBoton = document.getElementById ("btn"); idBoton.addEventListener
+      ('click',(e) =>{ window.location.href = '/'; })
+    </script>
+    <script src="../js/validacionClientes.js"></script>
+  </body>
+</html>

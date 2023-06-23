@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/usuarios.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <title>Roles</title>
+</head>
+
+<body>
+
+    <form id="msform">
+        <fieldset>
+            <h2 class="fs-title">
+                <a href="/">
+                    <img src="images/flecha.png" alt=""
+                        style="width: 28px; height: 28px; vertical-align: middle; margin-right: 10px;">
+                </a>
+                Roles
+            </h2>
+            <h3 class="fs-subtitle">Lista de Roles</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre del Rol</th>
+                        <th>Permisos</th>
+                        <th>Funciones</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Administrador</td>
+                        <td>Ventas, Eventos, Servicios, Ingredientes.</td>
+                        <td>
+                            <a href="/">
+                                <img src="images/listar.png" alt=""
+                                    style="width: 28px; height: 28px; vertical-align: middle; margin-right: 10px;">
+                            </a>
+                            <a href="/">
+                                <img src="images/editar.png" alt=""
+                                    style="width: 28px; height: 28px; vertical-align: middle; margin-right: 10px;">
+                            </a>
+                            <a href="/">
+                                <img src="images/eliminar.png" alt=""
+                                    style="width: 28px; height: 28px; vertical-align: middle; margin-right: 10px;">
+                            </a>
+                        </td>
+                        <td><a href="/">
+                                <img src="images/inactivo.png" alt=""
+                                    style="width: 28px; height: 28px; vertical-align: middle; margin-right: 10px;">
+                            </a></td>
+                    </tr>
+                    <tr>
+                        <td>Usuario</td>
+                        <td>Eventos, Servicios</td>
+                        <td> <a href="/">
+                                <img src="images/listar.png" alt=""
+                                    style="width: 28px; height: 28px; vertical-align: middle; margin-right: 10px;">
+                            </a></td>
+                        <td><a href="/">
+                                <img src="images/activo.png" alt=""
+                                    style="width: 28px; height: 28px; vertical-align: middle; margin-right: 10px;">
+                            </a></td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+            <a href="crearRoles">
+                <input id="btn" type="button" name="next" class="next action-button" value="Crear Rol" />
+            </a>
+        </fieldset>
+    </form>
+
+    <script src="../js/ValidacionesRol.js"></script>
+</body>
+
+</html>

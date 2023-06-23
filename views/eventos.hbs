@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/usuarios.css">
+  <title>Usuarios</title>
+</head>
+
+<body>
+
+  <form id="msform">
+    <fieldset>
+      <h2 class="fs-title">
+        <a href="/">
+          <img src="images/flecha.png" alt=""
+            style="width: 28px; height: 28px; vertical-align: middle; margin-right: 10px;">
+        </a>
+        Eventos
+      </h2>
+      <h3 class="fs-subtitle">Lista de Eventos</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nombre Clientes</th>
+            <th>Categoria</th>
+            <th>Fecha de Ejecución</th>
+            <th>Direcciòn</th>    
+            <th>Estado</th>        
+            <th>Precio</th>
+           <th>Pagado</th>
+           <th>Por Cobrar</th>
+          </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>Jorge Ignacio</td>
+                    <td>cumpleaños</td>
+                    <td>12/04/2023</td>
+                    <td>cll 24 #33-55</td>
+                    <td>pendiente</td>
+                    <td>700.000</td>
+                    <td>300.000</td>
+                    <td>400.000</td>
+                    <td><button class="details-button">Ver detalle</button></td>
+                     <td><button class="details-button2">cancelar</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Raul Marques</td>
+                    <td>boda</td>
+                    <td>11/08/2023</td>
+                    <td>cll 24 #33-55</td>
+                    <td>cancelado</td>
+                    <td>900.000</td>
+                    <td>400.000</td>
+                    <td>500.000</td>
+                    <td><button class="details-button">Ver detalle</button></td>
+                     <td><button class="details-button2">cancelar</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Sofia</td>
+                    <td>cumpleaños</td>
+                    <td>31/04/2023</td>
+                    <td>cll 24 #33-55</td>
+                    <td>pendiente</td>
+                    <td>2.700.000</td>
+                    <td>1.300.000</td>
+                    <td>1.400.000</td>
+                    <td><button class="details-button">Ver detalle</button></td>
+                     <td><button class="details-button2">cancelar</button></td>
+                </tr>
+        </tbody>
+      </table>
+      <a href="crearEvento">
+        <input id="btn" type="button" name="next" class="next action-button" value="Crear Evento"/>
+      </a>
+    </fieldset>
+  </form>
+
+</body>
+
+</html>

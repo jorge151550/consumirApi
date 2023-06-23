@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{titulo}}</title>
+    <link rel="stylesheet" href="../css/valid.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+</head>
+
+<body>
+    <form id="msform">
+        <fieldset>
+            <h2 class="fs-title">
+                <a href="/usuarios">
+                    <img src="images/flecha.png" alt=""
+                        style="width: 28px; height: 28px; vertical-align: middle; margin-right: 10px;">
+                </a>
+                Usuario
+            </h2>
+            <h3 class="fs-subtitle">Crear Usuario</h3>
+            <h2 class="fs-title">{{modulo}}</h2>
+            <h3 class="fs-subtitle">{{descripcion_modulo}}</h3>
+            <input type="text" id="nombres" placeholder="Ingrese sus Nombres" />
+            <input type="text" id="apellidos" placeholder="Ingrese sus apellidos" />
+            <input type="text" id="correo" placeholder="Ingrese su Correo" />
+            <input type="text" id="telefono" placeholder="Ingrese su Telefono (Minimo 10 numeros)" />
+            <h2 class="fs-title">Seleccione rol</h2>
+            <select id="rol">
+                <option value="administrador">Administrador</option>
+                <option value="usuario">Usuario</option>
+            </select>
+            <h2 class="fs-title">Seleccione Fecha de Creación</h2>
+            <input type="date" id="fecha" placeholder="Fecha de Creación" />
+            <h2 class="fs-title">Seleccione Estado</h2>
+            <select id="estado">
+                <option value="activo">Activo</option>
+                <option value="inactivo">Inactivo</option>
+            </select>
+            <!-- <input type="text" name="cpass" placeholder="Estado " /> -->
+            <button id="btn" type="submit" name="next" class="next action-button">Crear Usuario</button>
+        </fieldset>
+    </form>
+    <script src="../js/ValidacionesCrearUsuario.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/Ma.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="msform">
+        <fieldset>
+          <h2 class="fs-title">
+            <a href="/">
+              <img src="images/flecha.png" alt="" style="width: 28px; height: 28px; vertical-align: middle; margin-right: 10px;">
+            </a>
+            Categorias
+          </h2>
+          <h3 class="fs-subtitle">Crear categoria</h3>
+          <input id="nombreCategoria" type="text" name="email" placeholder="Nombre" />
+          <input id="descripcion"type="text" name="pass" placeholder="Descripcion" />
+          <h2 class="fs-title">Selecciona el estado</h2>
+          <select>
+            <option value="activo">Activo</option>
+            <option value="inactivo">Inactivo</option>
+          </select>
+          <input id="btn" type="button" name="next" class="next action-button" value="Enviar" />
+        </fieldset>
+    </form>
+    <script>
+      const idBoton = document.getElementById("btn");
+      idBoton.addEventListener('click',(e) => {
+      })
+    </script>
+    <script src="js/categoriaV.js"></script>
+  </body>
+</html>
